@@ -6,7 +6,7 @@
 //  Copyright © 2024 Igor Camilo. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 public final class Client: Sendable {
     public let token: String
@@ -29,4 +29,15 @@ public final class Client: Sendable {
 
 public enum ClientError: Error, Sendable {
     case invalidBaseURL
+}
+
+public extension EnvironmentValues {
+    var client: Client {
+        get { self[ClientEnvironmentKey.self] }
+        set { self[ClientEnvironmentKey.self] = newValue }
+    }
+}
+
+private enum ClientEnvironmentKey: EnvironmentKey {
+    static let defaultValue = Client(token: <#T##String#>)
 }
