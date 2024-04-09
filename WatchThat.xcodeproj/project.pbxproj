@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4B918D4C2BC58DD100BEFEDC /* WatchThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D4B2BC58DD100BEFEDC /* WatchThatApp.swift */; };
 		4B918D4E2BC58DD100BEFEDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D4D2BC58DD100BEFEDC /* ContentView.swift */; };
 		4B918D502BC58DD200BEFEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B918D4F2BC58DD200BEFEDC /* Assets.xcassets */; };
-		4B918D542BC58DD200BEFEDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B918D532BC58DD200BEFEDC /* Preview Assets.xcassets */; };
+		4B918D542BC58DD200BEFEDC /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B918D532BC58DD200BEFEDC /* Preview.xcassets */; };
 		4B918D5E2BC58DD200BEFEDC /* WatchThatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D5D2BC58DD200BEFEDC /* WatchThatTests.swift */; };
 		4B918D682BC58DD200BEFEDC /* WatchThatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D672BC58DD200BEFEDC /* WatchThatUITests.swift */; };
 		4B918D6A2BC58DD200BEFEDC /* WatchThatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D692BC58DD200BEFEDC /* WatchThatUITestsLaunchTests.swift */; };
@@ -39,7 +39,7 @@
 		4B918D4D2BC58DD100BEFEDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B918D4F2BC58DD200BEFEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B918D512BC58DD200BEFEDC /* WatchThat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchThat.entitlements; sourceTree = "<group>"; };
-		4B918D532BC58DD200BEFEDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B918D532BC58DD200BEFEDC /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
 		4B918D592BC58DD200BEFEDC /* WatchThatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchThatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B918D5D2BC58DD200BEFEDC /* WatchThatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchThatTests.swift; sourceTree = "<group>"; };
 		4B918D632BC58DD200BEFEDC /* WatchThatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchThatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,17 +99,17 @@
 				4B918D4D2BC58DD100BEFEDC /* ContentView.swift */,
 				4B918D4F2BC58DD200BEFEDC /* Assets.xcassets */,
 				4B918D512BC58DD200BEFEDC /* WatchThat.entitlements */,
-				4B918D522BC58DD200BEFEDC /* Preview Content */,
+				4B918D522BC58DD200BEFEDC /* Preview */,
 			);
 			path = WatchThat;
 			sourceTree = "<group>";
 		};
-		4B918D522BC58DD200BEFEDC /* Preview Content */ = {
+		4B918D522BC58DD200BEFEDC /* Preview */ = {
 			isa = PBXGroup;
 			children = (
-				4B918D532BC58DD200BEFEDC /* Preview Assets.xcassets */,
+				4B918D532BC58DD200BEFEDC /* Preview.xcassets */,
 			);
-			path = "Preview Content";
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		4B918D5C2BC58DD200BEFEDC /* WatchThatTests */ = {
@@ -194,6 +194,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
+				ORGANIZATIONNAME = "Igor Camilo";
 				TargetAttributes = {
 					4B918D472BC58DD000BEFEDC = {
 						CreatedOnToolsVersion = 15.3;
@@ -209,7 +210,7 @@
 				};
 			};
 			buildConfigurationList = 4B918D432BC58DD000BEFEDC /* Build configuration list for PBXProject "WatchThat" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -217,6 +218,7 @@
 				Base,
 			);
 			mainGroup = 4B918D3F2BC58DD000BEFEDC;
+			minimizedProjectReferenceProxies = 1;
 			productRefGroup = 4B918D492BC58DD000BEFEDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B918D542BC58DD200BEFEDC /* Preview Assets.xcassets in Resources */,
+				4B918D542BC58DD200BEFEDC /* Preview.xcassets in Resources */,
 				4B918D502BC58DD200BEFEDC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,6 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -419,11 +423,13 @@
 				CODE_SIGN_ENTITLEMENTS = WatchThat/WatchThat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchThat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = WatchThat/Preview;
 				DEVELOPMENT_TEAM = 2CPJD7ENY9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Watch That";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,12 +440,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.igorcamilo.WatchThat;
+				PRODUCT_BUNDLE_IDENTIFIER = me.igorcamilo.watchthat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -457,11 +461,13 @@
 				CODE_SIGN_ENTITLEMENTS = WatchThat/WatchThat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchThat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = WatchThat/Preview;
 				DEVELOPMENT_TEAM = 2CPJD7ENY9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Watch That";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,12 +478,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.igorcamilo.WatchThat;
+				PRODUCT_BUNDLE_IDENTIFIER = me.igorcamilo.watchthat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
