@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B58D1792BC85F34007FE21D /* PosterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58D1782BC85F34007FE21D /* PosterGridView.swift */; };
 		4B918D4C2BC58DD100BEFEDC /* WatchThatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D4B2BC58DD100BEFEDC /* WatchThatApp.swift */; };
 		4B918D4E2BC58DD100BEFEDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D4D2BC58DD100BEFEDC /* ContentView.swift */; };
 		4B918D502BC58DD200BEFEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B918D4F2BC58DD200BEFEDC /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B58D1782BC85F34007FE21D /* PosterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterGridView.swift; sourceTree = "<group>"; };
 		4B918D482BC58DD000BEFEDC /* WatchThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B918D4B2BC58DD100BEFEDC /* WatchThatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchThatApp.swift; sourceTree = "<group>"; };
 		4B918D4D2BC58DD100BEFEDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				4B918D4B2BC58DD100BEFEDC /* WatchThatApp.swift */,
 				4B918D4D2BC58DD100BEFEDC /* ContentView.swift */,
 				4BA27BAA2BC5E8E1009EB773 /* MovieDetailsView.swift */,
+				4B58D1782BC85F34007FE21D /* PosterGridView.swift */,
 				4BA27BA82BC5E298009EB773 /* PosterView.swift */,
 				4BA27BA52BC5B757009EB773 /* TMDB */,
 				4B918D4F2BC58DD200BEFEDC /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA27BA22BC5B5B9009EB773 /* ResultsContainer.swift in Sources */,
+				4B58D1792BC85F34007FE21D /* PosterGridView.swift in Sources */,
 				4B918D4E2BC58DD100BEFEDC /* ContentView.swift in Sources */,
 				4B918D4C2BC58DD100BEFEDC /* WatchThatApp.swift in Sources */,
 				4BA27BAB2BC5E8E1009EB773 /* MovieDetailsView.swift in Sources */,

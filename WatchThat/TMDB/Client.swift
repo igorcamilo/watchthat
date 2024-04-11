@@ -15,8 +15,20 @@ public final class Client: Sendable {
         self.token = token
     }
 
+    public func nowPlayingMovies() async throws -> [Movie] {
+        try await request(ResultsContainer<Movie>.self, endpoint: "movie/now_playing").results
+    }
+
     public func popularMovies() async throws -> [Movie] {
         try await request(ResultsContainer<Movie>.self, endpoint: "movie/popular").results
+    }
+
+    public func topRatedMovies() async throws -> [Movie] {
+        try await request(ResultsContainer<Movie>.self, endpoint: "movie/top_rated").results
+    }
+
+    public func upcomingMovies() async throws -> [Movie] {
+        try await request(ResultsContainer<Movie>.self, endpoint: "movie/upcoming").results
     }
 
     private func request<T>(_ type: T.Type, endpoint: String) async throws -> T where T: Decodable {
