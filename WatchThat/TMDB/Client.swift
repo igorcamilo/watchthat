@@ -16,14 +16,17 @@ public final class Client: Sendable {
     }
 
     public func popularMovies() async throws -> [Movie] {
-        guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular") else {
+        try await request(ResultsContainer<Movie>.self, endpoint: "movie/popular").results
+    }
+
+    private func request<T>(_ type: T.Type, endpoint: String) async throws -> T where T: Decodable {
+        guard let url = URL(string: "https://api.themoviedb.org/3/\(endpoint)") else {
             throw ClientError.invalidBaseURL
         }
         var request = URLRequest(url: url)
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         let (data, _) = try await URLSession.shared.data(for: request)
-        let parsedData = try JSONDecoder().decode(ParsedData<Movie>.self, from: data)
-        return parsedData.results
+        return try JSONDecoder().decode(T.self, from: data)
     }
 }
 

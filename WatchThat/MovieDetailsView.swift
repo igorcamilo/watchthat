@@ -1,5 +1,5 @@
 //
-//  MovieDetails.swift
+//  MovieDetailsView.swift
 //  WatchThat
 //
 //  Created by Igor Camilo on 09.04.24.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct MovieDetails: View {
+struct MovieDetailsView: View {
     let id: Movie.ID
 
     var body: some View {
@@ -18,5 +18,5 @@ struct MovieDetails: View {
 }
 
 #Preview {
-    MovieDetails(id: .init(rawValue: 1))
+    MovieDetailsView(id: .init(rawValue: 1))
 }

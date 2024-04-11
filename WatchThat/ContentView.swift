@@ -24,7 +24,7 @@ struct ContentView: View {
             }
             .navigationTitle("Popular Movies")
             .navigationDestination(for: Movie.ID.self) { id in
-                MovieDetails(id: id)
+                MovieDetailsView(id: id)
             }
         }
         .task {
