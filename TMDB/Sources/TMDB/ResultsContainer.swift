@@ -1,9 +1,8 @@
 //
 //  ResultsContainer.swift
-//  WatchThat
+//  TMDB
 //
 //  Created by Igor Camilo on 09.04.24.
-//  Copyright © 2024 Igor Camilo. All rights reserved.
 //
 
 public struct ResultsContainer<T> {

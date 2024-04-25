@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import TMDB
 
 struct MovieDetailsView: View {
     let id: Movie.ID

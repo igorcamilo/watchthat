@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import TMDB
 
 struct PosterView: View {
     let movie: Movie

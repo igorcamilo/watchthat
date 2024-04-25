@@ -1,10 +1,11 @@
 //
 //  Movie.swift
-//  WatchThat
+//  TMDB
 //
 //  Created by Igor Camilo on 09.04.24.
-//  Copyright © 2024 Igor Camilo. All rights reserved.
 //
+
+import Tagged
 
 public struct Movie: Codable, Identifiable, Sendable {
     public var adult: Bool
@@ -21,14 +22,40 @@ public struct Movie: Codable, Identifiable, Sendable {
     public var video: Bool
     public var voteAverage: Double
     public var voteCount: Int
-
-    public struct ID: Codable, Hashable, RawRepresentable, Sendable {
-        public var rawValue: Int
-
-        public init(rawValue: Int) {
-            self.rawValue = rawValue
-        }
+    
+    public init(
+        adult: Bool,
+        backdropPath: String,
+        genres: [Genre.ID],
+        id: ID,
+        originalLanguage: String,
+        originalTitle: String,
+        overview: String,
+        popularity: Double,
+        posterPath: String,
+        releaseDate: String,
+        title: String,
+        video: Bool,
+        voteAverage: Double,
+        voteCount: Int
+    ) {
+        self.adult = adult
+        self.backdropPath = backdropPath
+        self.genres = genres
+        self.id = id
+        self.originalLanguage = originalLanguage
+        self.originalTitle = originalTitle
+        self.overview = overview
+        self.popularity = popularity
+        self.posterPath = posterPath
+        self.releaseDate = releaseDate
+        self.title = title
+        self.video = video
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
     }
+    
+    public typealias ID = Tagged<Movie, Int>
 
     private enum CodingKeys: String, CodingKey {
         case adult

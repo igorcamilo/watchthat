@@ -1,10 +1,11 @@
 //
 //  Genre.swift
-//  WatchThat
+//  TMDB
 //
 //  Created by Igor Camilo on 09.04.24.
-//  Copyright © 2024 Igor Camilo. All rights reserved.
 //
+
+import Tagged
 
 public struct Genre: Codable, Identifiable, Sendable {
     public var id: ID
@@ -14,12 +15,6 @@ public struct Genre: Codable, Identifiable, Sendable {
         self.id = id
         self.name = name
     }
-
-    public struct ID: Codable, Hashable, RawRepresentable, Sendable {
-        public var rawValue: Int
-
-        public init(rawValue: Int) {
-            self.rawValue = rawValue
-        }
-    }
+    
+    public typealias ID = Tagged<Genre, Int>
 }

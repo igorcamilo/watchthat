@@ -6,25 +6,27 @@
 //  Copyright © 2024 Igor Camilo. All rights reserved.
 //
 
+import Dependencies
 import SwiftUI
+import TMDB
 
 struct PosterGridView: View {
     @State private var movies = [Movie]()
     @State private var list = List.nowPlaying
-    @Environment(\.client) private var client
+    @Dependency(\.tmdbClient) private var client
 
     var body: some View {
         let loadMovies: @MainActor () async -> Void = {
             do {
                 switch list {
                 case .nowPlaying:
-                    movies = try await client.nowPlayingMovies()
+                    movies = try await client.movies(.nowPlaying)
                 case .popular:
-                    movies = try await client.popularMovies()
+                    movies = try await client.movies(.popular)
                 case .topRated:
-                    movies = try await client.topRatedMovies()
+                    movies = try await client.movies(.topRated)
                 case .upcoming:
-                    movies = try await client.upcomingMovies()
+                    movies = try await client.movies(.upcoming)
                 }
             } catch {
                 print("error", error)

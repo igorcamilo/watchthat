@@ -15,12 +15,10 @@
 		4B918D5E2BC58DD200BEFEDC /* WatchThatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D5D2BC58DD200BEFEDC /* WatchThatTests.swift */; };
 		4B918D682BC58DD200BEFEDC /* WatchThatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D672BC58DD200BEFEDC /* WatchThatUITests.swift */; };
 		4B918D6A2BC58DD200BEFEDC /* WatchThatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B918D692BC58DD200BEFEDC /* WatchThatUITestsLaunchTests.swift */; };
-		4BA27BA02BC5A7C9009EB773 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27B9F2BC5A7C9009EB773 /* Client.swift */; };
-		4BA27BA22BC5B5B9009EB773 /* ResultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27BA12BC5B5B9009EB773 /* ResultsContainer.swift */; };
-		4BA27BA42BC5B694009EB773 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27BA32BC5B694009EB773 /* Movie.swift */; };
-		4BA27BA72BC5B9A8009EB773 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27BA62BC5B9A8009EB773 /* Genre.swift */; };
 		4BA27BA92BC5E298009EB773 /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27BA82BC5E298009EB773 /* PosterView.swift */; };
 		4BA27BAB2BC5E8E1009EB773 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA27BAA2BC5E8E1009EB773 /* MovieDetailsView.swift */; };
+		D14E31DE2BDADCB00079A67D /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = D14E31DD2BDADCB00079A67D /* Dependencies */; };
+		D14E31E12BDADCC10079A67D /* TMDB in Frameworks */ = {isa = PBXBuildFile; productRef = D14E31E02BDADCC10079A67D /* TMDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +51,9 @@
 		4B918D632BC58DD200BEFEDC /* WatchThatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchThatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B918D672BC58DD200BEFEDC /* WatchThatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchThatUITests.swift; sourceTree = "<group>"; };
 		4B918D692BC58DD200BEFEDC /* WatchThatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchThatUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4BA27B9F2BC5A7C9009EB773 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		4BA27BA12BC5B5B9009EB773 /* ResultsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsContainer.swift; sourceTree = "<group>"; };
-		4BA27BA32BC5B694009EB773 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		4BA27BA62BC5B9A8009EB773 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		4BA27BA82BC5E298009EB773 /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
 		4BA27BAA2BC5E8E1009EB773 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		D14E31DB2BDAC07B0079A67D /* TMDB */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TMDB; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14E31DE2BDADCB00079A67D /* Dependencies in Frameworks */,
+				D14E31E12BDADCC10079A67D /* TMDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +86,12 @@
 		4B918D3F2BC58DD000BEFEDC = {
 			isa = PBXGroup;
 			children = (
+				D14E31DB2BDAC07B0079A67D /* TMDB */,
 				4B918D4A2BC58DD000BEFEDC /* WatchThat */,
 				4B918D5C2BC58DD200BEFEDC /* WatchThatTests */,
 				4B918D662BC58DD200BEFEDC /* WatchThatUITests */,
 				4B918D492BC58DD000BEFEDC /* Products */,
+				D14E31DF2BDADCC10079A67D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,12 +149,15 @@
 		4BA27BA52BC5B757009EB773 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
-				4BA27B9F2BC5A7C9009EB773 /* Client.swift */,
-				4BA27BA62BC5B9A8009EB773 /* Genre.swift */,
-				4BA27BA32BC5B694009EB773 /* Movie.swift */,
-				4BA27BA12BC5B5B9009EB773 /* ResultsContainer.swift */,
 			);
 			path = TMDB;
+			sourceTree = "<group>";
+		};
+		D14E31DF2BDADCC10079A67D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +176,10 @@
 			dependencies = (
 			);
 			name = WatchThat;
+			packageProductDependencies = (
+				D14E31DD2BDADCB00079A67D /* Dependencies */,
+				D14E31E02BDADCC10079A67D /* TMDB */,
+			);
 			productName = WatchThat;
 			productReference = 4B918D482BC58DD000BEFEDC /* WatchThat.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +254,9 @@
 			);
 			mainGroup = 4B918D3F2BC58DD000BEFEDC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D14E31DC2BDADCB00079A67D /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+			);
 			productRefGroup = 4B918D492BC58DD000BEFEDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,15 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA27BA22BC5B5B9009EB773 /* ResultsContainer.swift in Sources */,
 				4B58D1792BC85F34007FE21D /* PosterGridView.swift in Sources */,
 				4B918D4E2BC58DD100BEFEDC /* ContentView.swift in Sources */,
 				4B918D4C2BC58DD100BEFEDC /* WatchThatApp.swift in Sources */,
 				4BA27BAB2BC5E8E1009EB773 /* MovieDetailsView.swift in Sources */,
-				4BA27BA72BC5B9A8009EB773 /* Genre.swift in Sources */,
-				4BA27BA02BC5A7C9009EB773 /* Client.swift in Sources */,
 				4BA27BA92BC5E298009EB773 /* PosterView.swift in Sources */,
-				4BA27BA42BC5B694009EB773 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +664,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D14E31DC2BDADCB00079A67D /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D14E31DD2BDADCB00079A67D /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14E31DC2BDADCB00079A67D /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		D14E31E02BDADCC10079A67D /* TMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TMDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B918D402BC58DD000BEFEDC /* Project object */;
 }
